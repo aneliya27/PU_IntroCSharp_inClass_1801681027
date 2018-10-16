@@ -16,12 +16,16 @@ namespace MusicFactory
             Console.WriteLine($"My answer is: {answer}");
             if (answer == "Yes")
             {
-                Console.WriteLine("Play music");
+               
 
                 using (SoundPlayer player = new SoundPlayer(@"C:\Users\fmi\Desktop\1b_A\PU_IntroCSharp_inClass_1801681027\W3InClass\MusicFactory\Music\music.mp3"))
                 {
-
+                    Console.WriteLine("Now playing...");
                     player.Play();
+                    while (true)
+                    {
+                        Console.Write(.);
+                    }
 
                 }
             }
